@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b10">
+<meta name="description" content="Rayan Ghomri Trading — أكاديمية تعليمية لفهم الأسواق والشموع اليابانية والتحليل الفني وإدارة المخاطر.">
+<title>Rayan Ghomri Trading | Learning Academy</title>
+<style>
+:root{--bg:#090b10;--panel:#11151e;--panel2:#171d28;--gold:#d9b45b;--gold2:#f0d58c;--text:#f4f1e8;--muted:#a6adba;--line:#2b3341;--green:#64c69a;--red:#e27d7d;--shadow:0 18px 50px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% -10%,#29200e 0,transparent 30%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.8}
+a{color:var(--gold2);text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#090b10eF;border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:.3px}.mark{width:39px;height:39px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-weight:900}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;line-height:1.2}
+.controls{display:flex;gap:8px;align-items:center}button,select{font:inherit}button,.lang{border:1px solid #66532b;background:#17140d;color:var(--gold2);border-radius:10px;padding:8px 12px;cursor:pointer}button:hover,.lang:hover{background:#2a2110}.menu{display:none}
+.hero{padding:76px 0 54px;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;font-size:12px}.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.15;margin:12px 0}.hero h1 span{color:var(--gold)}.lead{color:var(--muted);font-size:17px;max-width:690px}.hero-card{background:linear-gradient(145deg,#1d2027,#10131a);border:1px solid #554727;border-radius:24px;padding:24px;box-shadow:var(--shadow)}.hero-card h3{margin-top:0;color:var(--gold2)}.candle-demo{height:190px;display:flex;align-items:center;justify-content:space-around;border-bottom:1px solid var(--line);background:repeating-linear-gradient(0deg,transparent 0 37px,#ffffff09 38px 39px)}.stick{height:125px;width:2px;background:var(--green);position:relative}.stick:before{content:"";position:absolute;left:-9px;top:28px;width:20px;height:52px;background:var(--green);border-radius:2px}.stick.red{background:var(--red);height:145px}.stick.red:before{background:var(--red);top:38px;height:48px}.stick.short:before{top:48px;height:25px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px 0 38px}.stat{background:var(--panel);border:1px solid var(--line);padding:15px;border-radius:15px}.stat b{display:block;color:var(--gold);font-size:20px}.stat span{font-size:12px;color:var(--muted)}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:22px;padding-bottom:60px}.side{position:sticky;top:82px;align-self:start;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:17px}.side h3{margin:0 0 10px;color:var(--gold2);font-size:16px}.side a{display:block;color:var(--muted);padding:7px 10px;border-radius:9px;font-size:14px}.side a:hover{background:var(--panel2);color:var(--gold2)}
+.content{min-width:0}.section{margin-bottom:26px;scroll-margin-top:90px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px}.section h2{font-size:25px;margin:0}.section-head p{color:var(--muted);margin:0;font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.lesson{background:linear-gradient(145deg,var(--panel),#0e1118);border:1px solid var(--line);border-radius:16px;overflow:hidden}.lesson summary{list-style:none;cursor:pointer;padding:17px 18px;font-weight:750;display:flex;justify-content:space-between;gap:12px}.lesson summary::-webkit-details-marker{display:none}.lesson summary:after{content:"＋";color:var(--gold);font-size:20px}.lesson[open] summary:after{content:"−"}.lesson .body{padding:0 18px 18px;color:#d2d5dc}.lesson p{margin:8px 0}.lesson ul{padding-inline-start:22px;margin:8px 0}.tag{display:inline-block;color:var(--gold);font-size:11px;border:1px solid #67552e;padding:2px 8px;border-radius:99px;margin-inline-start:7px}
+.note{background:#211c10;border:1px solid #69552c;border-radius:14px;padding:16px;color:#ead9ac;margin:15px 0}.warning{background:#211719;border-color:#684044;color:#f0c4c4}
+.pattern-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.pattern{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}.pattern h4{margin:5px 0;color:var(--gold2)}.pattern p{font-size:13px;color:var(--muted);margin:5px 0}.mini{height:85px;display:flex;align-items:center;justify-content:center;gap:9px;background:repeating-linear-gradient(0deg,transparent 0 20px,#ffffff08 21px 22px);border-radius:9px}.c{width:13px;position:relative;border-radius:1px}.c:before{content:"";position:absolute;left:5px;top:-14px;height:calc(100% + 28px);width:2px;background:inherit}.up{height:34px;background:var(--green)}.down{height:38px;background:var(--red)}.tiny{height:17px}.long{height:49px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;min-width:550px;background:var(--panel)}th,td{padding:12px 14px;text-align:start;border-bottom:1px solid var(--line)}th{color:var(--gold2);background:#1b1d22}td{color:#d2d5dc;font-size:14px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}.footerline{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.search{width:100%;background:#0b0e14;border:1px solid var(--line);border-radius:10px;padding:10px;color:var(--text);margin:8px 0 12px}
+.hidden{display:none!important}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:48px}.layout{grid-template-columns:1fr}.side{position:static}.side nav{display:grid;grid-template-columns:repeat(2,1fr)}.pattern-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.cards{grid-template-columns:1fr}.pattern-grid{grid-template-columns:1fr 1fr}.brand{font-size:13px}.hero-card{padding:17px}.stats{gap:7px}.stat{padding:10px}.stat b{font-size:17px}.nav{gap:8px}.controls button{padding:7px 9px;font-size:12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+ <div class="brand"><div class="mark">RG</div><div>RAYAN GHOMRI TRADING<small>LEARNING ACADEMY</small></div></div>
+ <div class="controls"><button id="lang" class="lang" aria-label="Change language">English</button><button id="topBtn" data-i="top">↑</button></div>
+</div></header>
+<main class="wrap">
+<section class="hero" id="top">
+ <div><div class="eyebrow" data-i="eyebrow">FINANCIAL EDUCATION • KNOWLEDGE FIRST</div>
+ <h1 data-i="heroTitle">Learn the market.<br><span>Understand every candle.</span></h1>
+ <p class="lead" data-i="heroLead">A structured learning library covering market foundations, Japanese candlesticks, chart reading, technical tools and risk awareness — without real-money trading.</p>
+ <div class="note" data-i="heroNote">This is an educational resource, not financial advice. Markets involve risk; learning does not guarantee results.</div></div>
+ <div class="hero-card"><h3 data-i="chartTitle">A candle tells a story</h3><div class="candle-demo"><i class="stick"></i><i class="stick red"></i><i class="stick short"></i><i class="stick red"></i><i class="stick"></i><i class="stick red"></i><i class="stick short"></i></div><p style="color:var(--muted);font-size:13px" data-i="chartCaption">Open • High • Low • Close — the four prices behind every candlestick.</p></div>
+</section>
+<div class="stats"><div class="stat"><b>30+</b><span data-i="stat1">Structured learning topics</span></div><div class="stat"><b>20+</b><span data-i="stat2">Candlestick patterns explained</span></div><div class="stat"><b>3</b><span data-i="stat3">Languages: Arabic, Darija, English</span></div></div>
+<div class="layout">
+<aside class="side"><h3 data-i="contents">Learning contents</h3><input class="search" id="search" placeholder="Search lessons..." data-placeholder="search"><nav>
+<a href="#foundations" data-i="nav1">01 · Foundations</a><a href="#candles" data-i="nav2">02 · Candlesticks</a><a href="#patterns" data-i="nav3">03 · Candle patterns</a><a href="#charts" data-i="nav4">04 · Chart analysis</a><a href="#indicators" data-i="nav5">05 · Indicators</a><a href="#risk" data-i="nav6">06 · Risk awareness</a><a href="#glossary" data-i="nav7">07 · Glossary</a></nav></aside>
+<div class="content">
+<section class="section" id="foundations"><div class="section-head"><h2 data-i="foundationTitle">01. Market foundations</h2><p data-i="foundationSub">Start with the language of markets</p></div><div class="cards" id="foundationCards"></div></section>
+<section class="section" id="candles"><div class="section-head"><h2 data-i="candleTitle">02. Japanese candlesticks</h2><p data-i="candleSub">Read the four prices and candle structure</p></div><div class="cards" id="candleCards"></div></section>
+<section class="section" id="patterns"><div class="section-head"><h2 data-i="patternTitle">03. Candlestick patterns library</h2><p data-i="patternSub">Patterns are clues, never guarantees</p></div><div class="pattern-grid" id="patternCards"></div></section>
+<section class="section" id="charts"><div class="section-head"><h2 data-i="chartAnalysisTitle">04. Chart analysis</h2><p data-i="chartAnalysisSub">Context, structure and price behaviour</p></div><div class="cards" id="chartCards"></div></section>
+<section class="section" id="indicators"><div class="section-head"><h2 data-i="indicatorTitle">05. Technical indicators</h2><p data-i="indicatorSub">Understand what tools measure — and what they cannot tell you</p></div><div class="cards" id="indicatorCards"></div></section>
+<section class="section" id="risk"><div class="section-head"><h2 data-i="riskTitle">06. Risk awareness & learning discipline</h2><p data-i="riskSub">Protect your decisions with knowledge</p></div><div class="cards" id="riskCards"></div><div class="note warning" data-i="riskWarning">Never use borrowed money, essential savings or money intended for daily needs to speculate. This academy is for learning only; do not place real trades.</div></section>
+<section class="section" id="glossary"><div class="section-head"><h2 data-i="glossaryTitle">07. Glossary</h2><p data-i="glossarySub">Common words used in chart analysis</p></div><div class="tablewrap"><table><thead><tr><th data-i="term">Term</th><th data-i="meaning">Meaning</th></tr></thead><tbody id="glossaryBody"></tbody></table></div></section>
+</div></div>
+</main>
+<footer><div class="wrap footerline"><span>© 2026 Rayan Ghomri Trading — Learning Academy</span><span data-i="footer">Educational content only • No brokerage • No deposits • No financial advice</span></div></footer>
+<script>
+const data={
+en:{
+eyebrow:"FINANCIAL EDUCATION • KNOWLEDGE FIRST",heroTitle:'Learn the market.<br><span>Understand every candle.</span>',heroLead:"A structured learning library covering market foundations, Japanese candlesticks, chart reading, technical tools and risk awareness — without real-money trading.",heroNote:"This is an educational resource, not financial advice. Markets involve risk; learning does not guarantee results.",chartTitle:"A candle tells a story",chartCaption:"Open • High • Low • Close — the four prices behind every candlestick.",stat1:"Structured learning topics",stat2:"Candlestick patterns explained",stat3:"Languages: Arabic, Darija, English",contents:"Learning contents",search:"Search lessons...",nav1:"01 · Foundations",nav2:"02 · Candlesticks",nav3:"03 · Candle patterns",nav4:"04 · Chart analysis",nav5:"05 · Indicators",nav6:"06 · Risk awareness",nav7:"07 · Glossary",foundationTitle:"01. Market foundations",foundationSub:"Start with the language of markets",candleTitle:"02. Japanese candlesticks",candleSub:"Read the four prices and candle structure",patternTitle:"03. Candlestick patterns library",patternSub:"Patterns are clues, never guarantees",chartAnalysisTitle:"04. Chart analysis",chartAnalysisSub:"Context, structure and price behaviour",indicatorTitle:"05. Technical indicators",indicatorSub:"Understand what tools measure — and what they cannot tell you",riskTitle:"06. Risk awareness & learning discipline",riskSub:"Protect your decisions with knowledge",riskWarning:"Never use borrowed money, essential savings or money intended for daily needs to speculate. This academy is for learning only; do not place real trades.",glossaryTitle:"07. Glossary",glossarySub:"Common words used in chart analysis",term:"Term",meaning:"Meaning",footer:"Educational content only • No brokerage • No deposits • No financial advice",
+sections:[
+["What is a financial market?","A market is a system where participants exchange assets. Prices change as buyers and sellers react to information, expectations and available liquidity. A chart records price history; it does not predict the future."],
+["Asset classes","Shares represent ownership in companies; bonds are debt instruments; currencies are exchanged in pairs; commodities include resources such as gold and oil; crypto-assets are digital assets with distinct risks."],
+["What is a trading pair?","A pair such as EUR/USD compares one currency with another. The first is the base currency and the second is the quote currency. A price of 1.08 means one euro is quoted at 1.08 US dollars."],
+["Bid, ask and spread","Bid is the price a buyer offers; ask is the price a seller requests. The spread is the difference. A spread is a transaction cost and can widen when liquidity is low or volatility is high."],
+["Liquidity and volatility","Liquidity describes how easily an asset can be exchanged without greatly moving its price. Volatility describes how widely and quickly prices move. High volatility is not the same as a good opportunity."],
+["Timeframes","A timeframe is the length represented by each candle: one minute, one hour, one day and so on. A pattern can look different across timeframes; always know which timeframe you are viewing."],
+["Market sessions","Markets may be more active during overlapping regional sessions. Activity varies by asset and calendar. Session behaviour is descriptive, not a reliable forecast."],
+["Orders — concept only","A market order seeks immediate execution at available prices; a limit order specifies a price condition. Order types behave differently across venues. Learn their mechanics without placing live orders."]
+],
+candles:[
+["Anatomy of a candle","A candlestick has a body and often upper and lower wicks (shadows). The body spans open to close. The wicks show the highest and lowest traded prices during that period."],
+["Bullish and bearish candles","A bullish candle closes above its open; a bearish candle closes below its open. Green and red are common colours, but chart settings can differ. Colour alone does not explain why price moved."],
+["Open, high, low, close (OHLC)","Open is the first recorded price in the period; high is the highest; low is the lowest; close is the final recorded price. These four values form the basic OHLC data."],
+["Body size and meaning","A relatively large body shows a wide open-to-close move in that period. A small body shows a closer open and close. Compare body size with nearby candles and the broader chart."],
+["Wicks and rejection","A long wick shows price travelled away from the body before the period ended. It may indicate rejection or a temporary imbalance, but one wick cannot prove what participants intended."],
+["Doji candle","A doji has an open and close that are very close together. It reflects indecision or balance during that period. Its importance depends on location, surrounding candles and volume context."],
+["Marubozu","A marubozu has a very small or absent wick and a long body. It shows a strong directional move within that candle's period, but does not guarantee continuation."],
+["Inside and outside bars","An inside bar's range sits within the previous bar's range. An outside bar's range exceeds the previous bar's high and low. These describe range relationships, not automatic buy or sell signals."]
+],
+charts:[
+["Trend structure","An uptrend is often described by higher highs and higher lows; a downtrend by lower highs and lower lows. Sideways movement has no clear sequence. Identify structure before interpreting a pattern."],
+["Support and resistance","Support is an area where falling price has previously paused or turned; resistance is an area where rising price has paused or turned. Treat them as zones, not exact magical lines."],
+["Breakouts and false breaks","A breakout occurs when price moves beyond a recognised range or level. A false break returns inside the range. Confirmation methods vary and no method removes uncertainty."],
+["Trendlines and channels","Trendlines connect selected swing points; parallel lines can frame a channel. Different analysts may draw them differently, so avoid treating a line as an objective law."],
+["Volume basics","Volume measures how much was traded during a period, where reliable data is available. Compare volume with recent activity and price movement. Volume quality differs across markets and platforms."],
+["Multiple-timeframe context","A higher timeframe can show broad structure while a lower timeframe shows detail. Conflicting signals are common. More screens do not automatically create better decisions."]
+],
+indicators:[
+["Moving averages (SMA and EMA)","A moving average smooths past prices. SMA uses a simple average; EMA gives more weight to recent values. They lag because they are based on historical data."],
+["RSI","The Relative Strength Index is a momentum oscillator commonly displayed from 0 to 100. Readings above 70 or below 30 are often called overbought or oversold, but can persist during strong trends."],
+["MACD","MACD compares moving averages to study momentum and trend changes. It commonly includes a MACD line, signal line and histogram. Crossovers can be late and may produce false signals in sideways markets."],
+["Bollinger Bands","Bands are commonly built around a moving average using standard deviation. They expand and contract with volatility. Touching a band alone is not a reversal signal."],
+["ATR","Average True Range estimates recent volatility; it does not indicate direction. It can help describe how much an asset has moved, but values depend on the asset and timeframe."],
+["Fibonacci retracements","These are horizontal levels drawn between selected swing points. Traders use them as a framework to observe possible reaction areas; the chosen anchors are subjective and levels are not guaranteed."],
+["Indicator limitations","Indicators transform historical data. Several indicators may repeat the same information. Avoid stacking tools without a clear purpose and never treat an indicator as certainty."]
+],
+risk:[
+["Risk and uncertainty","Every market view can be wrong. A sound learning process starts by recognising uncertainty, defining what would disprove an idea and avoiding decisions made from excitement or fear."],
+["Position sizing — concept","Position sizing describes how exposure relates to an account. It depends on instrument rules, price movement and potential loss. Do not calculate or place real positions as a beginner; study the concept with fictional examples only."],
+["Leverage and margin","Leverage magnifies exposure and can magnify losses. Margin is collateral required by a provider. Products with leverage can be complex and unsuitable for inexperienced people."],
+["Trading psychology","Fear of missing out, revenge decisions and overconfidence can distort judgement. Keeping a learning journal and taking breaks can support thoughtful study."],
+["Scams and unrealistic promises","Be cautious of guaranteed profits, secret signals, pressure to deposit quickly, fake testimonials and requests for account passwords or recovery phrases. Never share login credentials."],
+["A safe learning routine","Study one topic at a time, annotate historical charts, compare more than one example and write down what you do not know. Use public educational material and fictional data only."]
+],
+patterns:[
+["Hammer","Small body near the top with a long lower wick. Often studied after a decline as a possible sign that lower prices were rejected. Needs context and confirmation."],
+["Hanging Man","Hammer-like shape after an advance. It can warn that selling pressure appeared during the period, but it is not proof of a reversal."],
+["Inverted Hammer","Small body near the bottom with a long upper wick, often studied after a decline. It shows an upward test that did not hold into the close."],
+["Shooting Star","Small body near the lower end with a long upper wick after an advance. It may show rejection of higher prices; context matters."],
+["Bullish Engulfing","A bullish candle body covers the previous bearish body. It is commonly studied as a possible shift in short-term momentum, not a guarantee."],
+["Bearish Engulfing","A bearish candle body covers the previous bullish body. It may indicate sellers became more active during the second period."],
+["Piercing Line","A bullish candle follows a bearish one and closes well into the prior body. It is generally studied after a decline."],
+["Dark Cloud Cover","A bearish candle follows a bullish one and closes well into the prior body. It is generally studied after an advance."],
+["Morning Star","A three-candle pattern: long bearish candle, small-bodied pause, then a strong bullish candle. It may suggest momentum is changing after a decline."],
+["Evening Star","A three-candle pattern: long bullish candle, small-bodied pause, then a strong bearish candle. It may suggest momentum is changing after an advance."],
+["Three White Soldiers","Three consecutive strong bullish candles with relatively small wicks. It can reflect persistent buying, but may appear after a move is already extended."],
+["Three Black Crows","Three consecutive strong bearish candles with relatively small wicks. It can reflect persistent selling; location and broader trend still matter."],
+["Harami","A small candle body forms within the previous larger body. It suggests a pause or contraction, not a guaranteed reversal."],
+["Tweezer Top","Two nearby highs form at a similar level. It can highlight resistance, but small differences and market noise matter."],
+["Tweezer Bottom","Two nearby lows form at a similar level. It can highlight support, but does not confirm that support will hold."],
+["Spinning Top","A small body with upper and lower wicks. It indicates a narrow open-close result despite movement both ways."],
+["Long-Legged Doji","A doji with long upper and lower wicks. It shows substantial movement in both directions but little net change."],
+["Dragonfly Doji","Open, close and high are near one another, with a long lower wick. It may show rejection of lower prices."],
+["Gravestone Doji","Open, close and low are near one another, with a long upper wick. It may show rejection of higher prices."],
+["Rising Three Methods","A strong bullish candle, a short consolidation of smaller candles, then a bullish continuation candle. The classic form is relatively specific and not always present."],
+["Falling Three Methods","A strong bearish candle, a short consolidation of smaller candles, then a bearish continuation candle. It describes a possible pause within a downtrend."]
+],
+glossary:[["OHLC","Open, High, Low, Close — the four prices of a candle."],["Wick / Shadow","The line extending beyond the candle body, showing extremes."],["Bullish","A term describing upward price direction or positive sentiment."],["Bearish","A term describing downward price direction or negative sentiment."],["Spread","The difference between bid and ask."],["Liquidity","How easily an asset can be exchanged without large price impact."],["Volatility","The degree of price variation over time."],["Support","A historical price area where declines have paused."],["Resistance","A historical price area where advances have paused."],["Volume","The amount traded during a period, when data is available."],["Momentum","The speed or strength of a price move."],["Drawdown","A decline from a previous account or value peak."]]
+},
+ar:{
+eyebrow:"التعليم المالي • المعرفة أولاً",heroTitle:'تعلّم الأسواق.<br><span>وافهم كل شمعة.</span>',heroLead:"مكتبة تعليمية منظمة تشرح أساسيات الأسواق والشموع اليابانية وقراءة الرسوم البيانية وأدوات التحليل الفني والوعي بالمخاطر، دون تداول بأموال حقيقية.",heroNote:"هذا محتوى تعليمي وليس نصيحة مالية. الأسواق تنطوي على مخاطر، والتعلم لا يضمن النتائج.",chartTitle:"كل شمعة تحكي حركة السعر",chartCaption:"الافتتاح • الأعلى • الأدنى • الإغلاق — الأسعار الأربعة وراء كل شمعة.",stat1:"موضوعاً تعليمياً منظماً",stat2:"نموذجاً من الشموع اليابانية",stat3:"لغات: العربية والدارجة والإنجليزية",contents:"محتويات الأكاديمية",search:"ابحث في الدروس...",nav1:"01 · الأساسيات",nav2:"02 · الشموع اليابانية",nav3:"03 · نماذج الشموع",nav4:"04 · تحليل الرسوم",nav5:"05 · المؤشرات",nav6:"06 · الوعي بالمخاطر",nav7:"07 · قاموس المصطلحات",foundationTitle:"01. أساسيات الأسواق",foundationSub:"ابدأ بفهم لغة الأسواق",candleTitle:"02. الشموع اليابانية",candleSub:"افهم الأسعار الأربعة وبنية الشمعة",patternTitle:"03. مكتبة نماذج الشموع",patternSub:"النماذج مؤشرات محتملة وليست ضمانات",chartAnalysisTitle:"04. تحليل الرسوم البيانية",chartAnalysisSub:"السياق والاتجاه وسلوك السعر",indicatorTitle:"05. المؤشرات الفنية",indicatorSub:"ماذا تقيس الأدوات وما حدودها؟",riskTitle:"06. الوعي بالمخاطر والانضباط",riskSub:"اجعل المعرفة أساس قراراتك",riskWarning:"لا تستخدم أموالاً مقترضة أو مدخرات ضرورية أو أموال الاحتياجات اليومية للمضاربة. هذه الأكاديمية للتعلم فقط؛ لا تنفذ صفقات حقيقية.",glossaryTitle:"07. قاموس المصطلحات",glossarySub:"مصطلحات شائعة في تحليل الرسوم",term:"المصطلح",meaning:"المعنى",footer:"محتوى تعليمي فقط • لا وسيط • لا إيداع • لا نصائح مالية",
+sections:[
+["ما هو السوق المالي؟","السوق نظام يلتقي فيه المشاركون لتبادل الأصول. تتغير الأسعار عندما يتفاعل المشترون والبائعون مع المعلومات والتوقعات والسيولة المتاحة. الرسم البياني يسجل حركة الماضي ولا يتنبأ بالمستقبل."],
+["فئات الأصول","الأسهم تمثل ملكية في الشركات، والسندات أدوات دين، والعملات يتم تداولها في أزواج، والسلع تشمل موارد مثل الذهب والنفط، أما الأصول المشفرة فهي أصول رقمية ذات مخاطر خاصة."],
+["ما هو زوج العملات؟","زوج مثل EUR/USD يقارن عملة بأخرى. العملة الأولى هي الأساسية والثانية عملة التسعير. السعر 1.08 يعني أن اليورو الواحد يساوي 1.08 دولار وفق هذا التسعير."],
+["سعر العرض والطلب والفارق","سعر العرض هو ما يعرضه المشتري، وسعر الطلب هو ما يطلبه البائع. الفارق بينهما يسمى السبريد، وهو تكلفة قد تتسع عند ضعف السيولة أو ارتفاع التقلب."],
+["السيولة والتقلب","السيولة تعني سهولة تبادل الأصل دون التأثير الكبير في سعره. التقلب يصف مدى سرعة واتساع تغير السعر. التقلب العالي لا يعني وجود فرصة جيدة."],
+["الأطر الزمنية","الإطار الزمني هو المدة التي تمثلها الشمعة، مثل دقيقة أو ساعة أو يوم. قد يبدو النموذج مختلفاً من إطار إلى آخر، لذلك يجب معرفة الإطار المستخدم."],
+["جلسات الأسواق","قد يزداد النشاط عند تداخل الجلسات الإقليمية، ويختلف ذلك حسب الأصل والتقويم. وصف نشاط الجلسات لا يقدم توقعاً موثوقاً."],
+["أنواع الأوامر — شرح نظري","أمر السوق يسعى إلى التنفيذ الفوري وفق الأسعار المتاحة، بينما يحدد الأمر المحدد سعراً أو شرطاً. تختلف طريقة عمل الأوامر بين المنصات؛ تعلّم المفاهيم دون تنفيذ أوامر حقيقية."]
+],
+candle:[
+["مكونات الشمعة","تتكون الشمعة من جسم وظلال علوية أو سفلية. يمتد الجسم بين الافتتاح والإغلاق، وتوضح الظلال أعلى وأدنى سعر خلال الفترة."],
+["الشمعة الصاعدة والهابطة","تكون الشمعة صاعدة عندما يكون الإغلاق أعلى من الافتتاح، وهابطة عندما يكون أدنى منه. اللون الأخضر والأحمر شائعان لكن إعدادات الألوان تختلف."],
+["الافتتاح والأعلى والأدنى والإغلاق","الافتتاح أول سعر مسجل في الفترة، والأعلى أعلى سعر، والأدنى أقل سعر، والإغلاق آخر سعر. هذه القيم الأربع تشكل بيانات OHLC."],
+["حجم الجسم","الجسم الكبير نسبياً يعبر عن فرق واسع بين الافتتاح والإغلاق، والجسم الصغير يعبر عن تقاربهما. قارن الجسم بالشموع المجاورة وبالسياق العام."],
+["الظلال ورفض السعر","الظل الطويل يعني أن السعر تحرك بعيداً عن الجسم قبل نهاية الفترة. قد يشير إلى رفض مستوى سعري أو اختلال مؤقت، لكنه لا يثبت نية المشاركين."],
+["شمعة دوجي","تكون أسعار الافتتاح والإغلاق متقاربة جداً. قد تعبر عن تردد أو توازن مؤقت. أهميتها تعتمد على موقعها والشموع المحيطة بها وحجم التداول."],
+["شمعة ماروبوزو","شمعة ذات جسم طويل وظلال قليلة أو غائبة. تعبر عن حركة اتجاهية قوية خلال الفترة، لكنها لا تضمن استمرار الاتجاه."],
+["الشمعة الداخلية والخارجية","مدى الشمعة الداخلية يقع داخل مدى الشمعة السابقة، بينما يتجاوز مدى الشمعة الخارجية أعلى وأدنى الشمعة السابقة. هذا وصف للعلاقة بين المديات وليس إشارة تلقائية."]
+],
+charts:[
+["بنية الاتجاه","الاتجاه الصاعد يوصف غالباً بقمم وقيعان أعلى، والهابط بقمم وقيعان أدنى. الحركة العرضية لا تظهر تسلسلاً واضحاً. حدد البنية قبل تفسير أي نموذج."],
+["الدعم والمقاومة","الدعم منطقة توقفت عندها انخفاضات سابقة أو انعكست، والمقاومة منطقة توقفت عندها ارتفاعات سابقة. تعامل معها كمناطق لا كخطوط دقيقة سحرية."],
+["الاختراق والاختراق الكاذب","يحدث الاختراق عندما يتحرك السعر خارج نطاق أو مستوى معروف. أما الاختراق الكاذب فيعود فيه السعر إلى داخل النطاق. لا توجد طريقة تلغي عدم اليقين."],
+["خطوط الاتجاه والقنوات","تصل خطوط الاتجاه بين نقاط القمم أو القيعان المختارة، ويمكن للخطوط المتوازية تحديد قناة. قد يختلف المحللون في رسمها، لذلك ليست قانوناً ثابتاً."],
+["أساسيات حجم التداول","يقيس الحجم كمية التداول خلال فترة عندما تتوفر بيانات موثوقة. قارنه بالنشاط السابق وبحركة السعر. تختلف جودة بيانات الحجم بين الأسواق والمنصات."],
+["تحليل أكثر من إطار زمني","قد يوضح الإطار الأكبر الاتجاه العام، بينما يعرض الإطار الأصغر تفاصيل أكثر. تعارض الإشارات أمر شائع، وكثرة الشاشات لا تعني تحليلاً أفضل."]
+],
+indicators:[
+["المتوسطات المتحركة SMA وEMA","المتوسط المتحرك يخفف تقلبات الأسعار السابقة. المتوسط البسيط يحسب متوسطاً عادياً، والأسي يعطي وزناً أكبر للأسعار الأحدث. كلاهما متأخر لأنه يعتمد على الماضي."],
+["مؤشر RSI","مؤشر القوة النسبية يقيس الزخم غالباً ضمن نطاق 0 إلى 100. تُسمى القراءات فوق 70 أحياناً تشبعاً شرائياً وتحت 30 تشبعاً بيعياً، لكن هذه الحالات قد تستمر في الاتجاهات القوية."],
+["مؤشر MACD","يقارن بين متوسطات متحركة لدراسة الزخم وتغير الاتجاه. يتضمن عادة خط MACD وخط الإشارة والمدرج التكراري. قد تتأخر التقاطعات وتنتج إشارات خاطئة في الأسواق العرضية."],
+["نطاقات بولينجر","تتكون عادة حول متوسط متحرك باستخدام الانحراف المعياري. تتسع وتنكمش مع التقلب. مجرد ملامسة النطاق لا تعني انعكاس السعر."],
+["مؤشر ATR","يقيس متوسط المدى الحقيقي التقلب الحديث ولا يحدد اتجاه السعر. تختلف قيمته بحسب الأصل والإطار الزمني."],
+["تصحيحات فيبوناتشي","مستويات أفقية ترسم بين قمتين أو قاعين مختارين. يستخدمها البعض لمراقبة مناطق تفاعل محتملة، لكن اختيار نقاط الرسم شخصي والمستويات ليست مضمونة."],
+["حدود المؤشرات","المؤشرات تحول بيانات تاريخية إلى حسابات. قد تكرر عدة مؤشرات المعلومة نفسها. لا تستخدم الأدوات بلا هدف واضح ولا تعتبر أي مؤشر يقيناً."]
+],
+risk:[
+["المخاطر وعدم اليقين","قد يكون أي تصور للسوق خاطئاً. يبدأ التعلم الجيد بالاعتراف بعدم اليقين ومعرفة ما الذي قد ينقض الفكرة وتجنب القرارات الناتجة عن الخوف أو الحماس."],
+["حجم التعرض — مفهوم نظري","حجم التعرض يصف العلاقة بين قيمة المركز والحساب، ويتأثر بقواعد الأداة وحركة السعر والخسارة المحتملة. لا تحسب أو تنفذ مراكز حقيقية كمبتدئ؛ ادرس المفهوم بأمثلة افتراضية فقط."],
+["الرافعة المالية والهامش","الرافعة تضخم حجم التعرض وقد تضخم الخسائر. الهامش ضمان تطلبه الجهة المقدمة للخدمة. المنتجات ذات الرافعة معقدة وقد لا تناسب غير المتمرسين."],
+["علم نفس التداول","الخوف من فوات الفرصة والقرارات الانتقامية والثقة المفرطة قد تشوش الحكم. تدوين الملاحظات وأخذ فترات راحة يساعدان على التعلم الهادئ."],
+["الاحتيال والوعود الوهمية","احذر الأرباح المضمونة والإشارات السرية والضغط للإيداع بسرعة والشهادات المزيفة وطلبات كلمات المرور أو عبارات الاسترداد. لا تشارك بيانات الدخول."],
+["روتين تعلم آمن","ادرس موضوعاً واحداً في كل مرة، وعلّق على الرسوم التاريخية، وقارن أمثلة متعددة، وسجل ما لا تعرفه. استخدم بيانات افتراضية ومواد تعليمية عامة فقط."]
+],
+patterns:[
+["المطرقة Hammer","جسم صغير قرب أعلى الشمعة وظل سفلي طويل. تُدرس غالباً بعد هبوط بوصفها احتمال رفض الأسعار المنخفضة. تحتاج إلى سياق وتأكيد."],
+["الرجل المشنوق Hanging Man","شكل يشبه المطرقة بعد صعود. قد ينبه إلى ظهور ضغط بيع خلال الفترة، لكنه لا يثبت انعكاس الاتجاه."],
+["المطرقة المقلوبة Inverted Hammer","جسم صغير قرب أسفل الشمعة وظل علوي طويل، وتُدرس غالباً بعد هبوط. تظهر اختباراً للصعود لم يستمر حتى الإغلاق."],
+["الشهاب Shooting Star","جسم صغير في الجزء السفلي وظل علوي طويل بعد صعود. قد يشير إلى رفض الأسعار الأعلى، ويظل السياق مهماً."],
+["الابتلاع الشرائي Bullish Engulfing","جسم شمعة صاعدة يغطي جسم الشمعة الهابطة السابقة. يُدرس كاحتمال تغير الزخم قصير الأجل وليس ضماناً."],
+["الابتلاع البيعي Bearish Engulfing","جسم شمعة هابطة يغطي جسم الشمعة الصاعدة السابقة. قد يشير إلى زيادة نشاط البائعين في الفترة الثانية."],
+["خط الاختراق Piercing Line","شمعة صاعدة تأتي بعد هابطة وتغلق داخل جزء كبير من جسم السابقة. تُدرس عادة بعد انخفاض."],
+["غطاء السحابة الداكنة Dark Cloud Cover","شمعة هابطة تأتي بعد صاعدة وتغلق داخل جزء كبير من جسم السابقة. تُدرس عادة بعد ارتفاع."],
+["نجمة الصباح Morning Star","نموذج من ثلاث شمعات: هابطة طويلة، ثم شمعة صغيرة، ثم صاعدة قوية. قد يشير إلى تغير الزخم بعد انخفاض."],
+["نجمة المساء Evening Star","نموذج من ثلاث شمعات: صاعدة طويلة، ثم شمعة صغيرة، ثم هابطة قوية. قد يشير إلى تغير الزخم بعد ارتفاع."],
+["الجنود البيض الثلاثة Three White Soldiers","ثلاث شمعات صاعدة متتالية وقوية نسبياً بظلال قصيرة. قد تعكس استمرار الشراء، لكنها قد تظهر بعد امتداد الحركة."],
+["الغربان السوداء الثلاثة Three Black Crows","ثلاث شمعات هابطة متتالية بظلال قصيرة نسبياً. قد تعكس استمرار البيع، ويظل الاتجاه العام مهماً."],
+["الحرامي Harami","جسم شمعة صغيرة يقع داخل جسم الشمعة السابقة الأكبر. قد يدل على توقف أو تقلص الحركة وليس انعكاساً مضموناً."],
+["الملقط العلوي Tweezer Top","قمتان متقاربتان عند مستوى مشابه. قد يسلط الضوء على مقاومة، لكن الضوضاء والفروق الصغيرة مهمة."],
+["الملقط السفلي Tweezer Bottom","قاعان متقاربان عند مستوى مشابه. قد يسلط الضوء على دعم، لكنه لا يؤكد صموده."],
+["القمة الدوارة Spinning Top","جسم صغير مع ظل علوي وسفلي. تعني أن السعر تحرك في الاتجاهين مع تقارب الافتتاح والإغلاق."],
+["دوجي طويل الأرجل Long-Legged Doji","شمعة دوجي ذات ظلال طويلة من الجهتين. تعكس حركة كبيرة في الاتجاهين مع تغير صافٍ محدود."],
+["دوجي اليعسوب Dragonfly Doji","الافتتاح والإغلاق والأعلى متقاربة مع ظل سفلي طويل. قد يعبر عن رفض الأسعار المنخفضة."],
+["دوجي شاهد القبر Gravestone Doji","الافتتاح والإغلاق والأدنى متقاربة مع ظل علوي طويل. قد يعبر عن رفض الأسعار المرتفعة."],
+["الطرق الثلاث الصاعدة Rising Three Methods","شمعة صاعدة قوية، ثم تماسك قصير بشموع أصغر، ثم شمعة صاعدة للاستمرار. النموذج الكلاسيكي محدد ولا يظهر دائماً."],
+["الطرق الثلاث الهابطة Falling Three Methods","شمعة هابطة قوية، ثم تماسك قصير، ثم شمعة هابطة للاستمرار. يصف توقفاً محتملاً داخل اتجاه هابط."]
+],
+glossary:[["OHLC","الافتتاح، الأعلى، الأدنى، الإغلاق — الأسعار الأربعة للشمعة."],["الظل / الفتيل","الخط خارج جسم الشمعة ويظهر الحدود القصوى للسعر."],["صاعد Bullish","وصف لحركة سعرية صاعدة أو ميل إيجابي."],["هابط Bearish","وصف لحركة سعرية هابطة أو ميل سلبي."],["السبريد Spread","الفرق بين سعر العرض وسعر الطلب."],["السيولة Liquidity","سهولة تبادل الأصل دون تأثير كبير في السعر."],["التقلب Volatility","مدى تغير السعر وسرعته خلال فترة."],["الدعم Support","منطقة تاريخية توقفت عندها انخفاضات."],["المقاومة Resistance","منطقة تاريخية توقفت عندها ارتفاعات."],["الحجم Volume","كمية التداول خلال فترة عند توفر البيانات."],["الزخم Momentum","سرعة أو قوة حركة السعر."],["التراجع Drawdown","انخفاض القيمة من قمة سابقة."]]
+},
+dar:{
+eyebrow:"التعلّم المالي • الفهم قبل كلشي",heroTitle:'تعلّم السوق.<br><span>وفهم كل شمعة.</span>',heroLead:"مكتبة ديال الدروس منظمة كتشرح أساسيات الأسواق، الشموع اليابانية، قراءة الشارت، المؤشرات، وكيفاش نفهمو المخاطر — بلا فلوس حقيقية وبلا تداول حقيقي.",heroNote:"هاد الموقع للتعليم فقط وماشي نصيحة مالية. الأسواق فيها مخاطر، والتعلم ما كيضمن حتى نتيجة.",chartTitle:"كل شمعة كتبيّن حركة الثمن",chartCaption:"الافتتاح • أعلى ثمن • أقل ثمن • الإغلاق — هادو هما 4 ديال الأثمنة ديال الشمعة.",stat1:"موضوع تعليمي منظم",stat2:"نموذج ديال الشموع مشروح",stat3:"لغات: العربية والدارجة والإنجليزية",contents:"محتويات الأكاديمية",search:"قلب على الدروس...",nav1:"01 · الأساسيات",nav2:"02 · الشموع اليابانية",nav3:"03 · أشكال الشموع",nav4:"04 · تحليل الشارت",nav5:"05 · المؤشرات",nav6:"06 · فهم المخاطر",nav7:"07 · قاموس المصطلحات",foundationTitle:"01. أساسيات السوق",foundationSub:"بدا بفهم لغة الأسواق",candleTitle:"02. الشموع اليابانية",candleSub:"فهم 4 ديال الأثمنة وشكل الشمعة",patternTitle:"03. مكتبة أشكال الشموع",patternSub:"الأشكال غير مؤشرات محتملة وماشي ضمانات",chartAnalysisTitle:"04. تحليل الشارت",chartAnalysisSub:"السياق والاتجاه وحركة الثمن",indicatorTitle:"05. المؤشرات التقنية",indicatorSub:"شنو كتقيس الأدوات وشنو الحدود ديالها",riskTitle:"06. فهم المخاطر والانضباط",riskSub:"خلي المعرفة هي الأساس",riskWarning:"ما تستعملش الفلوس اللي مسلف أو المدخرات الضرورية أو فلوس المصاريف فالمضاربة. هاد الأكاديمية للتعلم فقط؛ ما تدير حتى صفقة بفلوس حقيقية.",glossaryTitle:"07. قاموس المصطلحات",glossarySub:"كلمات كتستعمل بزاف فقراءة الشارت",term:"المصطلح",meaning:"المعنى",footer:"تعليم فقط • بلا وسيط • بلا إيداع • ماشي نصيحة مالية",
+sections:[
+["شنو هو السوق المالي؟","السوق هو نظام كيتلاقاو فيه الناس والمؤسسات باش يتبادلو الأصول. الثمن كيتبدل حسب المعلومات والتوقعات والسيولة. الشارت كيسجل شنو وقع فالماضي، وما كيقدرش يتنبأ بالمستقبل."],
+["أنواع الأصول","الأسهم كتمثل حصة فالشركات، السندات ديون، العملات كتكون فشكل أزواج، السلع بحال الذهب والنفط، والأصول المشفرة رقمية وعندها مخاطر خاصة."],
+["شنو هو زوج العملات؟","مثلاً EUR/USD كيقارن اليورو بالدولار. العملة اللولة هي الأساسية والثانية هي عملة التسعير. إلا كان الثمن 1.08 فهذا كيعني يورو واحد كيتسعر بـ1.08 دولار."],
+["Bid وAsk وSpread","Bid هو الثمن اللي المشتري مستعد يخلص، وAsk هو الثمن اللي البائع طالب. الفرق بيناتهم هو Spread، وكيعتبر تكلفة وقد يكبر ملي السيولة كتكون قليلة أو التقلب قوي."],
+["السيولة والتقلب","السيولة هي شحال ساهل تبدل الأصل بلا ما تحرك الثمن بزاف. التقلب هو شحال الثمن كيتحرك بسرعة وبمسافة كبيرة. التقلب القوي ما كيعنيش فرصة مزيانة."],
+["الأطر الزمنية Timeframes","كل شمعة كتمثل مدة: دقيقة، ساعة، نهار... نفس الشكل يقدر يبان مختلف حسب الإطار الزمني، لذلك خاصك تعرف شنو كتشوف."],
+["جلسات الأسواق","النشاط يقدر يزيد فبعض الأوقات ملي كتتلاقى الجلسات، ولكن هادشي كيتبدل حسب الأصل والتوقيت. معرفة الجلسات ماشي توقع مضمون."],
+["أنواع الأوامر — غير للفهم","Market order كيقصد التنفيذ حسب الأثمنة المتاحة، وLimit order كيحدد ثمن أو شرط. طريقة الخدمة كتختلف بين المنصات؛ فهم المفاهيم بلا ما تنفذ أوامر حقيقية."]
+],
+candles:[
+["مكونات الشمعة","الشمعة فيها الجسم وفتيل أو ظل من الفوق أو التحت. الجسم بين الافتتاح والإغلاق، والفتائل كيبينو أعلى وأقل ثمن وصل ليه السوق فداك الوقت."],
+["الشمعة الخضرا والحمراء","الشمعة كتكون صاعدة إلا كان الإغلاق فوق الافتتاح، وهابطة إلا كان تحت منو. اللون يقدر يختلف حسب إعدادات الشارت، وماشي اللون بوحدو اللي كيشرح الحركة."],
+["Open وHigh وLow وClose","Open هو ثمن البداية، High أعلى ثمن، Low أقل ثمن، وClose ثمن الإغلاق. هادو هما البيانات الأربعة الأساسية ديال الشمعة."],
+["حجم الجسم","إلا كان الجسم كبير نسبياً فهذا كيعني الفرق بين الافتتاح والإغلاق كبير. الجسم الصغير كيعني الثمنين قراب لبعضياتهم. قارن الشمعة مع اللي حدّاها."],
+["الفتائل ورفض الثمن","الفتيل الطويل كيبين أن الثمن مشى بعيد على الجسم ورجع قبل الإغلاق. ممكن يدل على رفض مستوى، ولكن بوحدو ما كيأكدش السبب."],
+["شمعة دوجي Doji","الافتتاح والإغلاق كيكونو قراب بزاف. كتقدر تعبر على التردد أو التوازن فداك الوقت. خاص نشوفو فين جات والسياق ديالها."],
+["ماروبوزو Marubozu","شمعة بجسم طويل وفتائل قليلة أو ما كايناش. كتبيّن حركة قوية فداك الاتجاه خلال الفترة، ولكن ما كتضمنش الاستمرار."],
+["Inside Bar وOutside Bar","Inside Bar المدى ديالها داخل مدى الشمعة اللي قبلها. Outside Bar كتفوت أعلى وأقل ديال السابقة. هادشي وصف للشكل، ماشي أمر شراء أو بيع."]
+],
+charts:[
+["الاتجاه Trend","الاتجاه الصاعد غالباً فيه قمم وقيعان كيزيدو، والهابط فيه قمم وقيعان كينقصو. الحركة العرضية ما فيهاش تسلسل واضح. فهم الاتجاه قبل ما تحلل أي شمعة."],
+["الدعم والمقاومة","الدعم منطقة كان الثمن كيوقف فيها الهبوط من قبل، والمقاومة منطقة كان كيوقف فيها الصعود. فكر فيهم كمناطق ماشي خطوط دقيقة ومضمونة."],
+["Breakout والاختراق الكاذب","Breakout هو ملي الثمن كيخرج من نطاق أو مستوى معروف. False breakout هو ملي كيخرج ويرجع يدخل للنطاق. حتى طريقة ما كتضمنش النتيجة."],
+["Trendlines والقنوات","خط الاتجاه كيربط بين قمم أو قيعان مختارة، والقناة كتكون بخطوط متوازية. المحللين يقدرو يرسموها بطرق مختلفة، يعني ماشي قانون ثابت."],
+["حجم التداول Volume","Volume كيقيس شحال من تداول وقع فمدة معينة إلا كانت البيانات متوفرة وموثوقة. قارن الحجم مع الفترات السابقة، وخاص تعرف أن الجودة كتختلف بين الأسواق."],
+["تحليل أكثر من Timeframe","الإطار الكبير كيعطيك الصورة العامة، والصغير كيبين التفاصيل. ممكن الإشارات تتعارض، وكثرة الشاشات ما كتضمنش تحليل أحسن."]
+],
+indicators:[
+["Moving Average SMA وEMA","المتوسط المتحرك كيلخص الأثمنة السابقة. SMA متوسط بسيط، وEMA كيعطي وزن أكبر للأثمنة الجديدة. بجوج متأخرين حيث مبنيين على الماضي."],
+["RSI","مؤشر القوة النسبية كيقيس الزخم وغالباً كيكون بين 0 و100. فوق 70 كيتسمى أحياناً تشبع شرائي وتحت 30 تشبع بيعي، ولكن يقدر يبقى هكا فترند قوي."],
+["MACD","كيقارن متوسطات متحركة باش يدرس الزخم وتغير الاتجاه. فيه غالباً خط MACD وخط الإشارة والهستوغرام. التقاطعات ممكن تتأخر وتعطي إشارات خاطئة."],
+["Bollinger Bands","نطاقات كتكون حول متوسط متحرك باستعمال الانحراف المعياري. كتوسع وتضيق حسب التقلب. ملامسة النطاق بوحدها ما كتأكدش الانعكاس."],
+["ATR","كيقيس متوسط المدى الحقيقي والتقلب الحديث، وما كيعطيش اتجاه الثمن. القيمة كتختلف حسب الأصل والإطار الزمني."],
+["Fibonacci","مستويات أفقية كترسم بين قمة وقاع مختارين. البعض كيراقبها كمناطق ممكن يتفاعل معاها الثمن، ولكن اختيار النقط شخصي وما كاين حتى ضمان."],
+["حدود المؤشرات","المؤشرات كتخدم على بيانات قديمة، وممكن عدة مؤشرات يعاودو نفس المعلومة. ما تستعملش الأدوات بلا هدف وما تعتبر حتى مؤشر يقين."]
+],
+risk:[
+["المخاطر وعدم اليقين","أي تحليل يقدر يكون غلط. التعلم الصحيح كيبدا بالاعتراف أن المستقبل ما معروفش، ومعرفة شنو يقدر يبين أن الفكرة ما صحيحةش."],
+["حجم التعرض — مفهوم فقط","حجم التعرض كيوصف العلاقة بين قيمة المركز والحساب. كيتأثر بقواعد الأصل وحركة الثمن والخسارة المحتملة. كمبتدئ، تعلم المفهوم بأمثلة خيالية فقط وما تنفذش مراكز حقيقية."],
+["الرافعة المالية والهامش","الرافعة كتضخم التعرض وقد تضخم الخسائر. الهامش ضمان كتطلبو المنصة. المنتجات بالرافعة معقدة وماشي مناسبة للمبتدئين."],
+["علم نفس التداول","الخوف من ضياع الفرصة والانتقام من الخسارة والثقة الزايدة كيقدرو يشوشو التفكير. تدوين الملاحظات والراحة كيساعدو فالتعلم."],
+["النصب والوعود الكاذبة","رد بالك من الأرباح المضمونة والإشارات السرية والضغط باش تدير إيداع بسرعة، ومن طلب كلمات السر أو عبارات الاسترجاع. ما تشاركش معلومات الدخول."],
+["روتين تعلم آمن","قرا موضوع واحد فكل مرة، وراجع شارتات قديمة، وقارن أمثلة مختلفة، وكتب شنو باقي ما فهمتيش. استعمل أمثلة افتراضية ومواد تعليمية عامة."]
+],
+patterns:[
+["المطرقة Hammer","جسم صغير قريب للفوق وفتيل طويل للتحت. كتتقرا غالباً من بعد الهبوط كاحتمال رفض للأثمنة المنخفضة. خاص السياق والتأكيد."],
+["الرجل المشنوق Hanging Man","شكل بحال المطرقة ولكن من بعد الصعود. ممكن ينبه لظهور ضغط البيع، ولكن ما كيأكدش انعكاس الاتجاه."],
+["المطرقة المقلوبة Inverted Hammer","جسم صغير قريب للتحت وفتيل طويل للفوق، كتدرس غالباً من بعد الهبوط. كتبيّن محاولة صعود ما ثبتاتش حتى الإغلاق."],
+["الشهاب Shooting Star","جسم صغير لتحت وفتيل طويل للفوق من بعد الصعود. ممكن يدل على رفض الأثمنة العالية، ولكن السياق مهم."],
+["الابتلاع الشرائي Bullish Engulfing","جسم شمعة خضرا كيغطي جسم الشمعة الحمرا اللي قبلها. ممكن يشير لتبدل فالزخم القصير، وماشي ضمان."],
+["الابتلاع البيعي Bearish Engulfing","جسم شمعة حمرا كيغطي جسم الشمعة الخضرا السابقة. ممكن يبين أن ضغط البائعين زاد فالفترة الثانية."],
+["Piercing Line","شمعة خضرا كتجي من بعد حمرا وكتسد داخل جزء كبير من جسم السابقة. كتدرس غالباً من بعد هبوط."],
+["Dark Cloud Cover","شمعة حمرا كتجي من بعد خضرا وكتسد داخل جزء كبير من جسم السابقة. كتدرس غالباً من بعد صعود."],
+["نجمة الصباح Morning Star","ثلاث شمعات: حمرا طويلة، شمعة صغيرة، ثم خضرا قوية. ممكن تشير لتبدل الزخم من بعد الهبوط."],
+["نجمة المساء Evening Star","ثلاث شمعات: خضرا طويلة، شمعة صغيرة، ثم حمرا قوية. ممكن تشير لتبدل الزخم من بعد الصعود."],
+["Three White Soldiers","ثلاث شمعات خضرا متتابعة وقوية نسبياً بفتائل قصيرة. ممكن تعكس استمرار الشراء، ولكن تقدر تجي من بعد حركة طويلة."],
+["Three Black Crows","ثلاث شمعات حمرا متتابعة بفتائل قصيرة نسبياً. ممكن تعكس استمرار البيع، والسياق العام باقي مهم."],
+["Harami","جسم شمعة صغيرة داخل جسم الشمعة الكبيرة اللي قبلها. ممكن يدل على توقف أو تقلص الحركة، ماشي انعكاس مضمون."],
+["Tweezer Top","جوج قمم قراب لبعضياتهم فمستوى متشابه. ممكن يبينو مقاومة، ولكن الضوضاء والفروق الصغيرة خاصها تتحسب."],
+["Tweezer Bottom","جوج قيعان قراب لبعضياتهم. ممكن يبينو دعم، ولكن ما كيأكدووش أن الدعم غادي يصمد."],
+["Spinning Top","جسم صغير وفتيل من الفوق والتحت. الثمن تحرك فالجهتين ولكن الافتتاح والإغلاق بقاو قراب."],
+["Long-Legged Doji","دوجي بفتائل طوال من الجهتين. كيبين حركة كبيرة فالجوج اتجاهات ولكن التغيير النهائي قليل."],
+["Dragonfly Doji","الافتتاح والإغلاق والأعلى قراب لبعضهم مع فتيل طويل للتحت. ممكن يعبر على رفض الأثمنة المنخفضة."],
+["Gravestone Doji","الافتتاح والإغلاق والأدنى قراب لبعضهم مع فتيل طويل للفوق. ممكن يعبر على رفض الأثمنة المرتفعة."],
+["Rising Three Methods","شمعة خضرا قوية، من بعدها توقف قصير بشموع صغار، ومن بعد شمعة خضرا للاستمرار. الشكل الكلاسيكي ما كيظهرش ديما."],
+["Falling Three Methods","شمعة حمرا قوية، من بعدها توقف قصير، ثم شمعة حمرا للاستمرار. كتوصف توقف محتمل داخل اتجاه هابط."]
+],
+glossary:[["OHLC","الافتتاح، الأعلى، الأدنى، الإغلاق."],["Wick / Shadow","الفتيل أو الظل اللي خارج جسم الشمعة."],["Bullish","صاعد أو عندو ميل للارتفاع."],["Bearish","هابط أو عندو ميل للانخفاض."],["Spread","الفرق بين سعر العرض والطلب."],["Liquidity","السيولة: سهولة تبادل الأصل بلا تأثير كبير فالثمن."],["Volatility","التقلب: مقدار وسرعة تغير الثمن."],["Support","الدعم: منطقة توقف فيها الهبوط من قبل."],["Resistance","المقاومة: منطقة توقف فيها الصعود من قبل."],["Volume","حجم التداول خلال مدة."],["Momentum","الزخم: سرعة أو قوة حركة الثمن."],["Drawdown","انخفاض القيمة من أعلى مستوى سابق."]]
+}
+};
+let lang="dar";
+const keys=["eyebrow","heroTitle","heroLead","heroNote","chartTitle","chartCaption","stat1","stat2","stat3","contents","nav1","nav2","nav3","nav4","nav5","nav6","nav7","foundationTitle","foundationSub","candleTitle","candleSub","patternTitle","patternSub","chartAnalysisTitle","chartAnalysisSub","indicatorTitle","indicatorSub","riskTitle","riskSub","riskWarning","glossaryTitle","glossarySub","term","meaning","footer"];
+function el(tag,cls,html){let x=document.createElement(tag);if(cls)x.className=cls;if(html!==undefined)x.innerHTML=html;return x}
+function render(){
+ const d=data[lang];document.documentElement.lang=lang==="en"?"en":"ar";document.documentElement.dir=lang==="en"?"ltr":"rtl";
+ keys.forEach(k=>{let n=document.querySelector(`[data-i="${k}"]`);if(n)n.innerHTML=d[k]});
+ document.querySelectorAll("[data-placeholder]").forEach(n=>n.placeholder=d[n.dataset.placeholder]);
+ document.getElementById("lang").textContent=lang==="dar"?"العربية":lang==="ar"?"English":"الدارجة";
+ const ids=["foundationCards","candleCards","chartCards","indicatorCards","riskCards"];
+ const groups=[d.sections.slice(0,8),d.sections.slice(8,16),d.sections.slice(16,22),d.sections.slice(22,29),d.sections.slice(29,35)];
+ ids.forEach((id,i)=>{let box=document.getElementById(id);box.innerHTML="";groups[i].forEach((item,j)=>{let det=el("details","lesson");let sum=el("summary","",item[0]);let body=el("div","body",`<p>${item[1]}</p>`);det.append(sum,body);box.append(det)})});
+ let p=document.getElementById("patternCards");p.innerHTML="";
+ d.patterns.forEach((item,i)=>{let card=el("article","pattern");let mini=el("div","mini");let types=i%4===0?["down","up"]:i%4===1?["up","down"]:i%4===2?["down","down","up"]:["up","up","down"];types.forEach((t,j)=>{let c=el("i","c "+t+(j===1?" long":""));mini.append(c)});card.append(mini,el("h4","",item[0]),el("p","",item[1]));p.append(card)});
+ let g=document.getElementById("glossaryBody");g.innerHTML="";d.glossary.forEach(r=>{let tr=el("tr");tr.append(el("td","",r[0]),el("td","",r[1]));g.append(tr)});
+}
+document.getElementById("lang").addEventListener("click",()=>{lang=lang==="dar"?"ar":lang==="ar"?"en":"dar";render()});
+document.getElementById("topBtn").addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+document.getElementById("search").addEventListener("input",e=>{let q=e.target.value.toLowerCase();document.querySelectorAll(".lesson,.pattern").forEach(x=>x.classList.toggle("hidden",q&&!x.innerText.toLowerCase().includes(q)))});
+render();
+</script>
+</body></html>
